@@ -7,7 +7,7 @@ module.exports = function createMultipageShader (opt) {
   var alphaTest = typeof opt.alphaTest === 'number' ? opt.alphaTest : 0.0001
 
   var textures = opt.textures || []
-  textures = Array.isArray(textures) ? textures : [ textures ]
+  textures = Array.isArray(textures) ? textures : [textures]
 
   var baseUniforms = {}
   textures.forEach(function (tex, i) {
